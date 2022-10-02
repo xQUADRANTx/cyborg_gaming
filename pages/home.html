@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+
     <!--font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +13,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <!--fontawesome icon-->
+    <script
+      src="https://kit.fontawesome.com/50714aaf35.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!--css-->
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
@@ -21,7 +29,11 @@
 
       <input type="search" name="Search" placeholder="Type Something" />
 
-      <span class="hamburger-menu"></span>
+      <div class="menu-bar">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
 
       <nav>
         <ul class="nav-list">
@@ -48,68 +60,47 @@
       </nav>
     </header>
 
-    <main>
-      <div class="introduction">
-        <h1 class="title">Welcome To Cyborg</h1>
+    <div class="wrapper">
+      <main>
+        <div class="introduction">
+          <h1 class="title">Welcome To Cyborg</h1>
 
-        <h2 class="description">Browse Our Popular Games Here</h2>
+          <h2 class="description">
+            <strong class="color-pink text-bold">browse</strong> Our Popular
+            Games Here
+          </h2>
 
-        <button class="browse">Browse Now</button>
-      </div>
+          <button class="browse">Browse Now</button>
+        </div>
 
-      <section class="popular-section">
-        <h2 class="section-title"><u>Most Popular</u> Right Now</h2>
+        <section class="popular-section">
+          <h2 class="section-title"><u>Most Popular</u> Right Now</h2>
 
-        <ul class="popular-game-list">
-          <!--game -01-->
-          <li class="game">
-            <img
-              src="../assets/images/popular-01.jpg"
-              alt="image of the game"
-              class="game-img"
-            />
+          <ul class="popular-game-list">
+            <!--game -01-->
+            <li class="game">
+              <img
+                src="../assets/images/popular-01.jpg"
+                alt="image of the game"
+                class="game-img"
+              />
 
-            <h3 class="game-title">Fortnite</h3>
+              <h3 class="game-title">Fortnite</h3>
 
-            <span class="rating">
-              <i class="fas fa-star"></i>
-              4.8
-            </span>
+              <span class="rating">
+                <i class="fas fa-star"></i>
+                4.8
+              </span>
 
-            <h4 class="description">Sandbox</h4>
+              <h4 class="description">Sandbox</h4>
 
-            <span class="downloads">
-              <i class="fas fa-download"></i>
-              2.3M
-            </span>
-          </li>
+              <span class="downloads">
+                <i class="fas fa-download"></i>
+                2.3M
+              </span>
+            </li>
 
-          <!--game -02-->
-          <li class="game">
-            <img
-              src="../assets/images/popular-02.jpg"
-              alt="image of the game"
-              class="game-img"
-            />
-
-            <h3 class="game-title">PubG</h3>
-
-            <span class="rating">
-              <i class="fas fa-star"></i>
-              4.8
-            </span>
-
-            <h4 class="description">Battle S</h4>
-
-            <span class="downloads">
-              <i class="fas fa-download"></i>
-              2.3M
-            </span>
-          </li>
-
-          <!--game -03 & -04-->
-          <div class="game-wrapper">
-            <!--game -03 -->
+            <!--game -02-->
             <li class="game">
               <img
                 src="../assets/images/popular-02.jpg"
@@ -125,6 +116,29 @@
               </span>
 
               <h4 class="description">Battle S</h4>
+
+              <span class="downloads">
+                <i class="fas fa-download"></i>
+                2.3M
+              </span>
+            </li>
+
+            <!--game -03 -->
+            <li class="game">
+              <img
+                src="../assets/images/popular-03.jpg"
+                alt="image of the game"
+                class="game-img"
+              />
+
+              <h3 class="game-title">Data2</h3>
+
+              <span class="rating">
+                <i class="fas fa-star"></i>
+                4.8
+              </span>
+
+              <h4 class="description">Stream-x</h4>
 
               <span class="downloads">
                 <i class="fas fa-download"></i>
@@ -135,171 +149,243 @@
             <!--game -04 -->
             <li class="game">
               <img
-                src="../assets/images/popular-02.jpg"
+                src="../assets/images/popular-04.jpg"
                 alt="image of the game"
                 class="game-img"
               />
 
-              <h3 class="game-title">PubG</h3>
+              <h3 class="game-title">CS-GO</h3>
 
               <span class="rating">
                 <i class="fas fa-star"></i>
                 4.8
               </span>
 
-              <h4 class="description">Battle S</h4>
+              <h4 class="description">Legendary</h4>
 
               <span class="downloads">
                 <i class="fas fa-download"></i>
                 2.3M
               </span>
             </li>
-          </div>
 
-          <!--game -05 -->
-          <li class="game">
-            <img
-              src="../assets/images/popular-02.jpg"
-              alt="image of the game"
-              class="game-img"
-            />
+            <!--game -05 & game-06 -->
+            <div class="game-wrapper">
+              <!--game -05-->
+              <li class="game">
+                <img
+                  src="../assets/images/popular-05.jpg"
+                  alt="image of the game"
+                  class="game-img"
+                />
 
-            <h3 class="game-title">PubG</h3>
+                <h3 class="game-title">Mini Craft</h3>
 
-            <span class="rating">
-              <i class="fas fa-star"></i>
-              4.8
-            </span>
+                <span class="rating">
+                  <i class="fas fa-star"></i>
+                  4.8
+                </span>
 
-            <h4 class="description">Battle S</h4>
+                <h4 class="description">Legendary</h4>
 
-            <span class="downloads">
-              <i class="fas fa-download"></i>
-              2.3M
-            </span>
-          </li>
-        </ul>
+                <span class="downloads">
+                  <i class="fas fa-download"></i>
+                  2.3M
+                </span>
+              </li>
 
-        <button class="browse">discover popular</button>
-      </section>
+              <!--game -06-->
+              <li class="game">
+                <img
+                  src="../assets/images/popular-06.jpg"
+                  alt="image of the game"
+                  class="game-img"
+                />
 
-      <!--gaming library-->
-      <section class="gaming-library">
-        <h2 class="section-title"><u>Most Popular</u> Right Now</h2>
+                <h3 class="game-title">Eagles Fly</h3>
 
-        <!--first game information-->
-        <ul class="game-information">
-          <img src="" alt="" class="game-img" />
+                <span class="rating">
+                  <i class="fas fa-star"></i>
+                  4.8
+                </span>
 
-          <li class="game-info">
-            <h3 class="game-title">
-              <strong>Data2</strong>
-              Sandbox
-            </h3>
-          </li>
+                <h4 class="description">Matrix Games</h4>
 
-          <li class="game-info">
-            <h3 class="date-added">
-              <strong>date added</strong>
-              Sandbox
-            </h3>
-          </li>
+                <span class="downloads">
+                  <i class="fas fa-download"></i>
+                  2.3M
+                </span>
+              </li>
+            </div>
 
-          <li class="game-info">
-            <h3 class="hours-played">
-              <strong>hours played</strong>
-              Sandbox
-            </h3>
-          </li>
+            <!--game -07-->
+            <li class="game">
+              <img
+                src="../assets/images/popular-07.jpg"
+                alt="image of the game"
+                class="game-img"
+              />
 
-          <li class="game-info">
-            <h3 class="status">
-              <strong>hours played</strong>
-              Sandbox
-            </h3>
-          </li>
+              <h3 class="game-title">Warface</h3>
 
-          <button class="download-btn">downloaed</button>
-        </ul>
+              <span class="rating">
+                <i class="fas fa-star"></i>
+                4.8
+              </span>
 
-        <!--second game  information-->
-        <ul class="game-information">
-          <img src="" alt="" class="game-img" />
+              <h4 class="description">Max 3D</h4>
 
-          <li class="game-info">
-            <h3 class="game-title">
-              <strong>Data2</strong>
-              Sandbox
-            </h3>
-          </li>
+              <span class="downloads">
+                <i class="fas fa-download"></i>
+                2.3M
+              </span>
+            </li>
 
-          <li class="game-info">
-            <h3 class="date-added">
-              <strong>date added</strong>
-              Sandbox
-            </h3>
-          </li>
+            <!--game -08-->
+            <li class="game">
+              <img
+                src="../assets/images/popular-08.jpg"
+                alt="image of the game"
+                class="game-img"
+              />
 
-          <li class="game-info">
-            <h3 class="hours-played">
-              <strong>hours played</strong>
-              Sandbox
-            </h3>
-          </li>
+              <h3 class="game-title">Warcraft</h3>
 
-          <li class="game-info">
-            <h3 class="status">
-              <strong>hours played</strong>
-              Sandbox
-            </h3>
-          </li>
+              <span class="rating">
+                <i class="fas fa-star"></i>
+                4.8
+              </span>
 
-          <button class="download-btn">download</button>
-        </ul>
+              <h4 class="description">Legend</h4>
 
-        <!--third game information-->
-        <ul class="game-information">
-          <img src="" alt="" class="game-img" />
+              <span class="downloads">
+                <i class="fas fa-download"></i>
+                2.3M
+              </span>
+            </li>
+          </ul>
 
-          <li class="game-info">
-            <h3 class="game-title">
-              <strong>Data2</strong>
-              Sandbox
-            </h3>
-          </li>
+          <button class="browse">Discover popular</button>
+        </section>
 
-          <li class="game-info">
-            <h3 class="date-added">
-              <strong>date added</strong>
-              Sandbox
-            </h3>
-          </li>
+        <!--gaming library-->
+        <section class="gaming-library">
+          <h2 class="section-title"><u>Your Gaming</u> library</h2>
 
-          <li class="game-info">
-            <h3 class="hours-played">
-              <strong>hours played</strong>
-              Sandbox
-            </h3>
-          </li>
+          <!--first game information-->
+          <ul class="game-information">
+            <img src="../assets/images/game-01.jpg" alt="" class="game-img" />
 
-          <li class="game-info">
-            <h3 class="status">
-              <strong>hours played</strong>
-              Sandbox
-            </h3>
-          </li>
+            <li class="game-info">
+              <h3 class="game-title">
+                <strong>Data 2</strong>
+                Sandbox
+              </h3>
+            </li>
 
-          <button class="download-btn">downloaded</button>
-        </ul>
+            <li class="game-info">
+              <h3 class="date-added">
+                <strong>Date Added</strong>
+                24/08/2036
+              </h3>
+            </li>
 
-        <button class="browse">View Your library</button>
-      </section>
-    </main>
+            <li class="game-info">
+              <h3 class="hours-played">
+                <strong>hours played</strong>
+                634 H 22 Mins
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="status">
+                <strong>Currently</strong>
+                downloaded
+              </h3>
+            </li>
+
+            <button class="download-btn">downloaded</button>
+          </ul>
+
+          <!--second game  information-->
+          <ul class="game-information">
+            <img src="../assets/images/game-02.jpg" alt="" class="game-img" />
+
+            <li class="game-info">
+              <h3 class="game-title">
+                <strong>Fortnite</strong>
+                Sandbox
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="date-added">
+                <strong>Date Added</strong>
+                22/06/2036
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="hours-played">
+                <strong>Hours Played</strong>
+                740 H 52 Mins
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="status">
+                <strong>Currently</strong>
+                downloaded
+              </h3>
+            </li>
+
+            <button class="download-btn download-btn--pink">download</button>
+          </ul>
+
+          <!--third game information-->
+          <ul class="game-information">
+            <img src="../assets/images/game-03.jpg" alt="" class="game-img" />
+
+            <li class="game-info">
+              <h3 class="game-title">
+                <strong>CS-GO</strong>
+                Sandbox
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="date-added">
+                <strong>Date Added</strong>
+                21/04/2036
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="hours-played">
+                <strong>Hours Played</strong>
+                892 H 14 Mins
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="status">
+                <strong>Currently</strong>
+                downloaded
+              </h3>
+            </li>
+
+            <button class="download-btn">downloaded</button>
+          </ul>
+
+          <button class="browse">View Your Library</button>
+        </section>
+      </main>
+    </div>
 
     <footer>
       <p>
-        Copyright &copy; 2036 Cyborg Gaming Company. All rights reserved.
-        Design: TemplateMo
+        Copyright &copy; 2036 Cyborg Gaming Company. All rights reserved Design:
+        TemplateMo
       </p>
     </footer>
   </body>

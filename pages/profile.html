@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--fontawesome icon-->
+    <script
+      src="https://kit.fontawesome.com/50714aaf35.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="../styles/profile.css" />
+  </head>
+  <body>
+    <!--header section-->
+    <header>
+      <img src="../assets/images/logo.png" alt="logo" class="logo" />
+
+      <span class="search-btn">
+        <label class="search-icon">
+          <i aria-hidden="true" class="fas fa-search"></i>
+
+          <span class="sr-only"> search icon</span>
+        </label>
+
+        <input type="search" name="Search" placeholder="Type Something" />
+      </span>
+
+      <div class="menu-bar">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">Browse</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">Details</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">Streams</a>
+          </li>
+
+          <li class="nav-item nav-item--last">
+            <a href="#">Profile</a>
+            <img
+              src="../assets/images/profile-header.jpg"
+              alt="profile picture"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--wrapper element-->
+    <div class="wrapper">
+      <!--main section-->
+      <main>
+        <!--profile section-->
+        <section class="profile">
+          <img
+            class="profile-img"
+            src="../assets/images/profile.jpg"
+            alt="profile picture"
+          />
+
+          <div class="profile-description">
+            <button class="online-status-btn">offline</button>
+
+            <h2 class="gamer-name">Alan Smithee</h2>
+
+            <p class="live-text">
+              You Haven't Gone Live yet. Go Live By Touching The Button Below.
+            </p>
+
+            <button class="live-stream-btn">Start Live Stream</button>
+          </div>
+
+          <div class="activities">
+            <div class="activity">
+              <p>Games Downloaded</p>
+              <p class="font-weight-1 color-pink">3</p>
+            </div>
+
+            <div class="activity">
+              <p>Freinds Online</p>
+              <p class="font-weight-1 color-pink">16</p>
+            </div>
+
+            <div class="activity">
+              <p>Live Streams</p>
+              <p class="font-weight-1 color-pink">None</p>
+            </div>
+
+            <div class="activity">
+              <p>Clips</p>
+              <p class="font-weight-1 color-pink">29</p>
+            </div>
+          </div>
+        </section>
+
+        <!--popular section-->
+        <section class="popular-section">
+          <h2 class="section-title"><u>Your Most Popular</u> clips</h2>
+
+          <ul class="popular-clip-list">
+            <!--game -01-->
+            <li class="clip">
+              <span class="image-container">
+                <img
+                  src="../assets/images/clip-01.jpg"
+                  alt="thumbnail for the clip"
+                  class="clip-img"
+                />
+
+                <span class="play-btn">
+                  <i aria-hidden="true" class="fas fa-play"></i>
+
+                  <span class="sr-only">play button</span>
+                </span>
+              </span>
+
+              <h3 class="clip-title">First Clip</h3>
+
+              <span class="rating">
+                <span class="rating-icon">
+                  <i class="fas fa-eye"></i>
+
+                  <span class="sr-only">amount of view</span>
+                </span>
+
+                250
+              </span>
+            </li>
+
+            <!--game -02-->
+            <li class="clip">
+              <span class="image-container">
+                <img
+                  src="../assets/images/clip-02.jpg"
+                  alt="thumbnail for the clip"
+                  class="clip-img"
+                />
+
+                <span class="play-btn">
+                  <i aria-hidden="true" class="fas fa-play"></i>
+
+                  <span class="sr-only">play button</span>
+                </span>
+              </span>
+
+              <h3 class="clip-title">Second Clip</h3>
+
+              <span class="rating">
+                <span class="rating-icon">
+                  <i class="fas fa-eye"></i>
+
+                  <span class="sr-only">amount of view</span>
+                </span>
+
+                183
+              </span>
+            </li>
+
+            <!--game -03 -->
+            <li class="clip">
+              <span class="image-container">
+                <img
+                  src="../assets/images/clip-03.jpg"
+                  alt="thumbnail for the clip"
+                  class="clip-img"
+                />
+
+                <span class="play-btn">
+                  <i aria-hidden="true" class="fas fa-play"></i>
+
+                  <span class="sr-only">play button</span>
+                </span>
+              </span>
+
+              <h3 class="clip-title">Third Clip</h3>
+
+              <span class="rating">
+                <span class="rating-icon">
+                  <i class="fas fa-eye"></i>
+
+                  <span class="sr-only">amount of view</span>
+                </span>
+
+                141
+              </span>
+            </li>
+
+            <!--game -04 -->
+            <li class="clip">
+              <span class="image-container">
+                <img
+                  src="../assets/images/clip-04.jpg"
+                  alt="thumbnail for the clip"
+                  class="clip-img"
+                />
+
+                <span class="play-btn">
+                  <i aria-hidden="true" class="fas fa-play"></i>
+
+                  <span class="sr-only">play button</span>
+                </span>
+              </span>
+
+              <h3 class="clip-title">Fourth Clip</h3>
+
+              <span class="rating">
+                <span class="rating-icon">
+                  <i class="fas fa-eye"></i>
+
+                  <span class="sr-only">amount of view</span>
+                </span>
+
+                91
+              </span>
+            </li>
+          </ul>
+
+          <button class="load-clip-btn">Load more clips</button>
+        </section>
+
+        <!--gaming library-->
+        <section class="gaming-library">
+          <h2 class="section-title"><u>Your Gaming</u> Library</h2>
+
+          <!--first game information-->
+          <ul class="game-information">
+            <img
+              src="../assets/images/game-01.jpg"
+              alt="image of the game"
+              class="game-img"
+            />
+
+            <li class="game-info">
+              <h3 class="clip-title">
+                <strong>Data 2</strong>
+                Sandbox
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="date-added">
+                <strong>Date Added</strong>
+                24/08/2036
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="hours-played">
+                <strong>hours played</strong>
+                634 H 22 Mins
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="status">
+                <strong>Currently</strong>
+                downloaded
+              </h3>
+            </li>
+
+            <button class="download-btn">downloaded</button>
+          </ul>
+
+          <!--second game  information-->
+          <ul class="game-information">
+            <img
+              src="../assets/images/game-02.jpg"
+              alt="image of the game"
+              class="game-img"
+            />
+
+            <li class="game-info">
+              <h3 class="clip-title">
+                <strong>Fortnite</strong>
+                Sandbox
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="date-added">
+                <strong>Date Added</strong>
+                22/06/2036
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="hours-played">
+                <strong>Hours Played</strong>
+                740 H 52 Mins
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="status">
+                <strong>Currently</strong>
+                downloaded
+              </h3>
+            </li>
+
+            <button class="download-btn download-btn--pink">download</button>
+          </ul>
+
+          <!--third game information-->
+          <ul class="game-information">
+            <img
+              src="../assets/images/game-03.jpg"
+              alt="image of the game"
+              class="game-img"
+            />
+
+            <li class="game-info">
+              <h3 class="clip-title">
+                <strong>CS-GO</strong>
+                Sandbox
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="date-added">
+                <strong>Date Added</strong>
+                21/04/2036
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="hours-played">
+                <strong>Hours Played</strong>
+                892 H 14 Mins
+              </h3>
+            </li>
+
+            <li class="game-info">
+              <h3 class="status">
+                <strong>Currently</strong>
+                downloaded
+              </h3>
+            </li>
+
+            <button class="download-btn">downloaded</button>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <!--footer section-->
+    <footer>
+      <p>
+        Copyright &copy; 2036 Cyborg Gaming Company. All rights reserved Design:
+        TemplateMo
+      </p>
+    </footer>
+  </body>
+</html>

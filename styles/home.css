@@ -6,6 +6,7 @@
   padding: 0;
 }
 
+/*custome variables*/
 :root {
   --bg-body: #1f2122;
   --bg-dark-gray: #27292a;
@@ -17,6 +18,7 @@
   --color-white: #fff;
 }
 
+/*the html document base font-size*/
 html {
   font-size: 62.5%;
 }
@@ -35,7 +37,11 @@ body {
   font-size: 1.5rem;
 }
 
+/*header part*/
 header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
   background: var(--color-white);
   padding-top: 1.5rem;
   display: flex;
@@ -46,6 +52,7 @@ header {
 
 .logo {
   margin-left: 2.5prem;
+  z-index: 1;
 }
 
 .search-btn,
@@ -53,7 +60,9 @@ input[type="search"] {
   display: none;
 }
 
+/*humberger menu*/
 .menu-bar {
+  z-index: 1;
   width: 3.1rem;
   height: 4rem;
   margin-right: 2.5rem;
@@ -75,8 +84,26 @@ input[type="search"] {
 .line-1,
 .line-3 {
   width: calc(100% - 0.7rem) !important;
+  transition: transform 1s ease, opacity 1s ease;
 }
 
+.line-2 {
+  transition: opacity 1s ease;
+}
+
+.rotate-line-1 {
+  transform: rotate(-45deg) translate(-3px, 5px);
+}
+
+.vanish-line-2 {
+  opacity: 0;
+}
+
+.rotate-line-3 {
+  transform: rotate(45deg) translate(-7px, -10px);
+}
+
+/*nav bar*/
 nav {
   margin: 1.5rem auto 0;
   width: 100%;
@@ -88,11 +115,22 @@ nav {
 
 .nav-list {
   background: var(--color-white);
-  display: none;
   width: 90%;
-  max-width: 54rem;
+  max-width: 74.4rem;
   margin: 0 auto;
   list-style-type: none;
+  position: absolute;
+  top: 100%;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.nav-item--last img {
+  display: none;
 }
 
 .nav-item a {
@@ -111,16 +149,19 @@ nav {
   color: var(--color-very-dark-pink);
 }
 
+/*wrapper element which contain the main element*/
 .wrapper {
   padding: 3rem 1.3rem 0;
 }
 
+/*main element*/
 main {
   background: var(--bg-dark-gray);
   padding: 0 3rem;
   border-radius: 2.3rem;
 }
 
+/*introduction section*/
 .introduction {
   border-radius: 2.3rem;
   padding: 9.05rem 0;
@@ -192,6 +233,7 @@ main {
 
 .popular-game-list {
   display: grid;
+  grid-template-columns: 1fr;
   grid-gap: 3.5rem 1.7rem;
 }
 
@@ -268,7 +310,6 @@ main {
   background: var(--bg-dark-gray);
   border-radius: 2.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(21.9rem, 1fr));
   grid-gap: 0 1.7rem;
 }
 
@@ -361,11 +402,13 @@ footer p {
 }
 
 @media (min-width: 578px) {
+  /*wrapper class element which includes the main element*/
   .wrapper {
     display: grid;
     justify-content: center;
   }
 
+  /*popular-section*/
   .popular-game-list,
   .game-wrapper {
     grid-template-columns: 21rem 21rem;
@@ -373,11 +416,13 @@ footer p {
 }
 
 @media (min-width: 767px) {
+  /*main element*/
   main {
     width: 516px;
     padding: 6.5rem;
   }
 
+  /*introduction section*/
   .introduction {
     align-items: flex-start;
     padding: 8rem 6rem;
@@ -398,11 +443,13 @@ footer p {
     line-height: 1.25;
   }
 
+  /*popular-section*/
   .popular-game-list,
   .game-wrapper {
     grid-template-columns: auto auto;
   }
 
+  /*game library section*/
   .game-information {
     justify-content: stretch;
     justify-items: start;
@@ -426,16 +473,19 @@ footer p {
 }
 
 @media (min-width: 768px) {
+  /*wrapper element which include the main element*/
   .wrapper {
     padding: 3rem 4rem 0;
   }
 
+  /*main element*/
   main {
     width: 69.6rem;
   }
 }
 
 @media (min-width: 992px) {
+  /*header section*/
   header {
     width: 93.6rem;
     flex-wrap: nowrap;
@@ -471,10 +521,12 @@ footer p {
     margin-left: 0.8rem;
   }
 
+  /*hamburger menu*/
   .menu-bar {
     display: none;
   }
 
+  /*nav bar*/
   nav {
     width: auto;
     flex-grow: 1;
@@ -484,10 +536,16 @@ footer p {
 
   .nav-list {
     background: transparent;
+    position: static;
     width: 100%;
     max-width: unset;
     display: flex;
     justify-content: flex-end;
+  }
+
+  .hidden {
+    transform: unset;
+    opacity: unset;
   }
 
   .nav-item {
@@ -512,6 +570,7 @@ footer p {
     height: 3rem;
     width: 3rem;
     margin-left: 1rem;
+    display: inline;
   }
 
   .nav-item a {

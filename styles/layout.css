@@ -1,0 +1,64 @@
+
+.display-block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-content-space-between {
+    justify-content: space-between;
+}
+
+.flex-justify-content-start {
+    justify-content: flex-start;
+}
+
+/* Padding */
+.p-block-13 {
+    padding-block: 0.8125rem;
+}
+
+.p-block-15 {
+    padding-block: 0.9375rem;
+}
+
+.p-inline-10 {
+    padding-inline: 0.625rem;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-30 {
+    padding: 1.875rem;
+}
+
+.p-60 {
+    padding: 3.75rem;
+}
+
+/* Margin */
+.m-0 {
+    margin: 0;
+}
+
+/*  */
+.border-radius-23 {
+    border-radius: 23px;
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+.font-12 {
+    font-size: 1.3rem;
+}
+
+.font-13 {
+    font-size: 0.8125rem;
+}
+
+.font-14 {
+    font-size: 0.875rem;
+}
+
+.font-15 {
+    font-size: 0.9275rem;
+}
+
+.font-20 {
+    font-size: 1.25rem;
+}
+
+.font-34 {
+    font-size: 2.125rem;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}

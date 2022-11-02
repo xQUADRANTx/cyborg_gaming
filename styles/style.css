@@ -1,0 +1,10 @@
+@import url('./resets.css');
+@import url('./layout.css');
+@import url('./variables.css');
+@import url('./colors.css');
+@import url('./font.css');
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', 'sans-serif';
+}
